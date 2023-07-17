@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ryamsbarber.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Ryams Barber</title>
+</head>
+<body>
+    <!-- banner section start -->
+    <div class="banner">
+        <img src="logo.png" alt="" class="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+            <p>Style Your Hair Is Style Your Life </p>
+            <div class="banner-btn">
+                <a href=""><span></span> Find out</a>
+                <a href=""><span></span> Read more</a>
+            </div>
+        </div>
+    </div>
+    <!-- banner section end -->
+
+    <!-- nav section start -->
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn1">
+        <img src="menu.png" alt="" id="menu">
+    </div>
+<script>
+        let menubtn = document.getElementById("menubtn1")
+        let sidenav = document.getElementById("sidenav")
+        let menu = document.getElementById("menu")
+        
+        sidenav.style.right="-220px";
+
+        menubtn.onclick = function(){
+            if(sidenav.style.right == "-220px"){
+                sidenav.style.right = "0";
+                menu.src = "close.png"
+            }
+            else{
+                sidenav.style.right = "-220px";
+                menu.src = "menu.png"
+            }
+        }
+</script>
+</body>
+</html>
